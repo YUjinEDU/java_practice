@@ -44,6 +44,10 @@ public class ArrayOperations {
      * Calculates the sum of all elements in an array.
      */
     public static int calculateSum(int[] arr) {
+        if (arr == null || arr.length == 0) {
+            return 0;
+        }
+        
         int sum = 0;
         for (int num : arr) {
             sum += num;
